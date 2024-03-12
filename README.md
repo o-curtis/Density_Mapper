@@ -20,3 +20,15 @@ This code was used to create the density maps studied in
   McDonough, B., et al., "Resolved Star Formation in TNG100 Central and Satellite Galaxies." The Astrophysical Journal 958.1 (2023): 19.
   
 If you use this code then please cite the above paper.
+
+I have included the example script "make_D4000_parts_maps.py" that was used to take in the subhalo catalog TNG100 along with
+all D4000 stellar particles identified in the simulation and make stellar mass density maps. Unfortunately, these files 
+are too large to make a proper example, but one can use it as a reference for how to load in galaxy and particle data,
+find particles associated with a galaxy, project the particles along an axis, instantiate the grid, create a 
+Density_Mapper object, and run the cubic spline fitting.
+
+Dependencies
+-numba
+-numpy
+-h5py
+-glob
